@@ -1,0 +1,133 @@
+/* NutritionMeter.css File */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 241, 241);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.container {
+    width: 750px;
+    
+    margin: 80px auto;
+    padding: 15px;
+    background-color: #94723f; /* beige tone */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.text-center {
+    text-align: center;
+    color: #0b0b0b; /* dark blue */
+    font-weight: 900;
+    
+}
+
+.warning {
+    background-color: #36454f; /* army green */
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.clear-button {
+    background-color: #1c1c1c; /* black */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.clear-button:hover {
+    background-color: #383838;
+}
+
+#nutrition-icon {
+    color: #0a2a36; /* matching blue */
+    margin-left: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #2a2a2a; /* dark tone for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button.edit-button {
+    background-color: #1f4e5f; /* blue-green for edit */
+}
+
+button.delete-button {
+    background-color: #641e16; /* deep red for delete */
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Cards for each food item */
+.card {
+    background-color: #f9f9f7; /* soft beige */
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .clear-button, button {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-center {
+        font-size: 1.2em;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 8px;
+        margin: 5px;
+    }
+
+    button, .clear-button {
+        padding: 5px 8px;
+        font-size: 0.85em;
+    }
+}
